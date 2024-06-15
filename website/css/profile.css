@@ -1,0 +1,78 @@
+/* Styles for left column text */
+.profilFontLeft {
+  color: gray;
+  text-align: right;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 125%; /* Larger text size */
+  padding-bottom: 15px; /* Increased line spacing */
+}
+
+/* Styles for right column text */
+.profilFontRight {
+  color: black;
+  text-align: left;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 125%;
+  padding-bottom: 15px; /* Increased line spacing */
+}
+
+/* Styles for profile columns */
+.profilColumn {
+  float: left;
+  width: 50%; /* 50% of the container width */
+  padding: 10px; /* Padding for spacing */
+}
+
+/* Styles for the avatar image */
+img.avatar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  border-radius: 50%; /* Circular image */
+}
+
+/* Edit profile button positioning and styles */
+.editProfile {
+  margin-top: 20px; /* Reduced top margin for closer proximity to the table */
+  position: relative; /* Changed from absolute to relative for flow positioning */
+  left: 50%;
+  transform: translateX(-50%); /* Center align the button horizontally */
+}
+
+/* Styles for editing button */
+.editButton {
+  background-color: #007bff; /* Blue background color */
+  color: white;
+  border: none;
+  font-size: 14px; /* Reduced font size for subtlety */
+  padding: 8px 16px; /* Smaller padding for a less bulky button */
+  border-radius: 5px; /* Slightly rounded edges, not fully circular */
+}
+
+/* Hover effect for edit button */
+.editButton:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styles for delete account button, if needed */
+.deleteAccBtn {
+  background-color: red;
+  color: white;
+  border: none;
+  font-size: 14px; /* Matching font size with edit button */
+  padding: 8px 16px;
+  border-radius: 5px; /* Slightly rounded edges, consistent with edit button */
+}
+
+/* Hover effect for delete account button */
+.deleteAccBtn:hover {
+  background-color: rgb(165, 0, 0);
+}
+
+/* Styles for the center table */
+.tableCenter {
+  margin-left: auto;
+  margin-right: auto;
+  border-color: #000;
+}

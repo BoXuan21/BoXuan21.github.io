@@ -1,0 +1,31 @@
+/* CSS for the About Us section */
+#aboutus {
+    text-align: center; /* Center align text */
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 10px; /* Rounded corners for the section */
+    padding: 40px; /* Add padding for spacing */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    margin: 20px auto; /* Center horizontally and add margin for spacing */
+    max-width: 800px; /* Limit maximum width */
+}
+
+#aboutus h1 {
+    font-size: 2rem; /* Larger font size for the heading */
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+.about-content {
+    padding: 20px; /* Add padding inside the box */
+    border: 2px solid #ccc; /* Border style */
+    border-radius: 15px; /* Rounded corners for the box */
+    background-color: white; /* Background color for the box */
+    margin-top: 20px; /* Add some space between the heading and the box */
+}
+
+.about-content p {
+    font-size: 1.2rem; /* Increase font size for the paragraph */
+    line-height: 1.6; /* Adjust line height for better readability */
+    font-weight: 600; /* Make the text thicker */
+    margin: 0; /* Remove default margins */
+    padding: 0 20px; /* Add padding for better spacing */
+}

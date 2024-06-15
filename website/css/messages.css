@@ -1,0 +1,13 @@
+.error {
+    font-weight: bold;
+    text-align: center; /* Center align text */
+    color: red; /* Keep the title color black or adjust as needed */
+    margin-bottom: 20px; /* Adds space between the h1 and p for better readability */
+}
+
+.success {
+    font-weight: bold;
+    text-align: center; /* Center align text */
+    color: green; /* Keep the title color black or adjust as needed */
+    margin-bottom: 20px; /* Adds space between the h1 and p for better readability */
+}

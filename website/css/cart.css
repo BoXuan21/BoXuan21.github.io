@@ -1,0 +1,13 @@
+.cart-heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.cart-heading {
+  display: flex;
+  align-items: center;
+}
+.cart-heading img {
+  margin-right: 10px;
+}

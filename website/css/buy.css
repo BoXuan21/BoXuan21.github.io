@@ -1,0 +1,55 @@
+/* Style for the parent container */
+.product-container {
+    text-align: center; /* Center align the product boxes */
+}
+
+/* Style for h2 */
+h2 {
+    font-size: 30px; /* Adjust the font size as needed */
+    text-align: center; /* Center the text */
+}
+
+/* Style for product boxes */
+.product-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    width: 300px; /* Adjust width as needed */
+    text-align: center;
+    display: inline-block;
+    border-radius: 15px; /* Rounded corners for the boxes */
+    vertical-align: top; /* Align top for consistent box height alignment */
+}
+
+/* Style for product images */
+.product-box img {
+    width: 100%; /* Ensure images take up full width of container */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    display: block;
+    margin: 0 auto; /* Center images horizontally */
+}
+
+/* Style for product titles */
+.product-box h3 {
+    margin-top: 0; /* Remove default margin */
+}
+
+/* Style for product buttons */
+.product-box button {
+    margin-top: 10px; /* Add space between buttons and text */
+    margin-right: 10px; /* Add a little space between buttons */
+    background-color: #007bff; /* Light blue background color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Cursor style */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Hover effect */
+.product-box button:hover {
+    background-color: #0056b3; /* Dark blue background color on hover */
+    color: #fff; /* Text color on hover */
+}

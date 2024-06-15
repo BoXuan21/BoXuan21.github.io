@@ -1,0 +1,118 @@
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default and set up the fade-in animation */
+  .mySlides {
+    display: flex; /* Use flexbox to position images side by side */
+    justify-content: center; /* Center the images horizontally */
+    gap: 20px; /* Add a gap between images */
+  }
+  
+  /* Style for each slide's images */
+  .mySlides a img {
+    border-radius: 15px; /* Round the corners of the images */
+    width: calc(50% - 10px); /* Adjust width to account for the gap */
+    height: auto; /* Keep the aspect ratio */
+    max-height: 250px; /* Set a max height for larger screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for some depth */
+  }
+  
+  /* Rest of the styles remain the same */
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .mySlides a img {
+        width: calc(100% - 10px); /* Full width for smaller screens */
+        max-height: 150px; /* Adjust height on smaller screens */
+        margin: 10px 0; /* Add some margin on the top and bottom */
+    }
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #ffffff;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  .slideshow-container img {
+      width: 100%; /* Adjusts the image width to fit the container */
+      height: 250px; /* Fixed height */
+      object-fit: cover; /* Ensures the aspect ratio is maintained without distorting the image */
+  }
+  /* Drop-down menu styles */
+  .nav-links li.dropdown {
+    position: relative;
+    display: inline-block;
+  }

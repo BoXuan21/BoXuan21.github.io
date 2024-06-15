@@ -1,0 +1,36 @@
+/* Contact Us Section */
+#support {
+    text-align: center; /* Center-align content */
+}
+
+/* Support Options Container */
+.support-options {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center-align items horizontally */
+}
+
+/* Individual Support Option */
+.support-option {
+    background-color: #f0f0f0; /* Background color for the option */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the option */
+    margin: 10px; /* Margin around the option */
+    width: 300px; /* Set a fixed width for the option */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    text-align: center; /* Center-align text */
+}
+
+/* Button Style */
+.support-option .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #90c6ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.support-option .button:hover {
+    background-color: #0056b3;
+}

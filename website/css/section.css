@@ -1,0 +1,157 @@
+/* Base styles for body and html */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: white;
+  color: #000000;
+  text-align: center;
+}
+
+#home h1 {
+  font-size: 2.5rem; /* Increase font size */
+  text-align: center; /* Center align text */
+  color: #000000; /* Keep the title color black or adjust as needed */
+  margin-bottom: 20px; /* Adds space between the h1 and p for better readability */
+}
+
+#home h2 {
+  font-size: 2.5rem; /* Increase font size */
+  text-align: center; /* Center align text */
+  color: grey; /* Changed color to grey */
+  margin-bottom: 20px; /* Adds space between the h1 and p for better readability */
+}
+
+#home h3 {
+  font-size: 1.5rem; /* Increase font size */
+  text-align: center; /* Center align text */
+  color: #000000; /* Changed color to grey */
+  margin-bottom: 10px; /* Adds space between the h1 and p for better readability */
+}
+
+#home p, #sales p {
+  font-size: 1.5rem; /* Slightly larger paragraph text for emphasis */
+  text-align: center; /* Center align text */
+  color: #2e2e2e; /* Greyish color for the paragraph */
+  margin-bottom: 30px; /* Adds space between the p and action buttons */
+  background-color: white; /* Semi-transparent white background */
+  padding: 10px; /* Reduced padding for a smaller box */
+  border-radius: 8px; /* Optional: Adds rounded corners to the box */
+  max-width: 25%; /* Limits the width to make the box smaller */
+  margin-left: auto; /* Centers the box horizontally */
+  margin-right: auto; /* Centers the box horizontally */
+}
+
+/* Header styles */
+header {
+  background-color: #313131; /* Deep grey */
+  color: rgb(255, 255, 255);
+  padding: 0px 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Sell section specific styles */
+#sell {
+  background-color: #fff;
+  margin: 20px;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+#sell h1 {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#sell p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.sell-form form {
+  margin: auto;
+  max-width: 500px;
+  text-align: left;
+}
+
+.sell-form label {
+  display: block;
+  margin: 15px 0 5px;
+  color: #333;
+  font-weight: 600;
+}
+
+.sell-form input[type=text], .sell-form input[type=number], .sell-form select, .sell-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sell-form input[type=submit] {
+  background-color: #007aff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sell-form input[type=submit]:hover {
+  background-color: #005ecb;
+}
+
+/* Additional styles for product boxes */
+.product-container {
+  text-align: center; /* Center align the product boxes */
+}
+
+.product-box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  width: 300px; /* Adjust width as needed */
+  text-align: center;
+  display: inline-block;
+  border-radius: 15px; /* Rounded corners for the boxes */
+  vertical-align: top; /* Align top for consistent box height alignment */
+}
+
+.product-box img {
+  width: 100%; /* Ensure images take up full width of container */
+  height: 200px; /* Set a fixed height for all images */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  display: block;
+  margin: 0 auto; /* Center images horizontally */
+}
+
+.product-box h3 {
+  margin-top: 0; /* Remove default margin */
+}
+
+.product-box button,
+.submitButton {
+  margin-top: 10px; /* Add space between buttons and text */
+  margin-right: 10px; /* Add a little space between buttons */
+  background-color: #007bff; /* Blue background color */
+  color: #fff; /* Text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Padding for button */
+  border-radius: 20px; /* Rounded corners */
+  cursor: pointer; /* Cursor style */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.product-box button:hover,
+.submitButton:hover {
+  background-color: #0056b3; /* Dark blue background color on hover */
+  color: #fff; /* Text color on hover */
+}

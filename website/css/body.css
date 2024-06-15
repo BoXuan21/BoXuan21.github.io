@@ -1,0 +1,463 @@
+/* Base styles for body and html */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: white;
+    color: #000000;
+}
+
+#home h1 {
+    font-size: 2.5rem; /* Increase font size */
+    text-align: center; /* Center align text */
+    color: #000000; /* Keep the title color black or adjust as needed */
+    margin-bottom: 20px; /* Adds space between the h1 and p for better readability */
+}
+#home h2 {
+  font-size: 2.5rem; /* Increase font size */
+  text-align: center; /* Center align text */
+  color: grey; /* Changed color to grey */
+  margin-bottom: 20px; /* Adds space between the h1 and p for better readability */
+}
+
+#home h3 {
+  font-size: 1.5rem; /* Increase font size */
+  text-align: center; /* Center align text */
+  color: #000000; /* Changed color to grey */
+  margin-bottom: 10px; /* Adds space between the h1 and p for better readability */
+}
+
+
+#home p, #sales p {
+    font-size: 1.5rem; /* Slightly larger paragraph text for emphasis */
+    text-align: center; /* Center align text */
+    color: #2e2e2e; /* Greyish color for the paragraph */
+    margin-bottom: 30px; /* Adds space between the p and action buttons */
+    background-color:white; /* Semi-transparent white background */
+    padding: 10px; /* Reduced padding for a smaller box */
+    border-radius: 8px; /* Optional: Adds rounded corners to the box */
+    max-width: 25%; /* Limits the width to make the box smaller */
+    margin-left: auto; /* Centers the box horizontally */
+    margin-right: auto; /* Centers the box horizontally */
+}
+
+/* Header styles */
+header {
+    background-color: #313131; /* Deep grey */
+    color: rgb(255, 255, 255);
+    padding: 0px 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2px;
+    background-color: rgb(221, 221, 221);
+    font-size: 15px;
+}
+/*hover effect on logo */
+.logo img {
+  transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.logo img:hover {
+  filter: brightness(80%);
+  transform: scale(1.1); /* Increase the size by 10% */
+}
+
+.nav-links, .auth-cart {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li, .auth-cart li {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav-links li a, .auth-cart li a {
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover, .auth-cart li a:hover {
+    color: #ffffff;
+}
+
+.logo img {
+    max-width: 80px;
+}
+
+main {
+    padding-top: 100px;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    align-items: center; /* Align buttons vertically */
+    flex-wrap: wrap; /* Allows buttons to wrap in smaller screens */
+    gap: 20px; /* Adds space between buttons */
+    padding: 20px;
+}
+
+.action-buttons button {
+  background-color: rgb(255, 255, 255);
+  color: #313131;
+  border: 2px solid #313131;
+  padding: 20px 40px;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0; /* Start invisible */
+  transform: translateY(50px); /* Start below their final position */
+  animation: slideUpAndFadeIn 0.5s ease-out forwards; /* Animation */
+  animation-delay: 0.2s; /* Starts the animation a bit later */
+}
+
+/* Animation for each button with a slight delay */
+.action-buttons button:nth-child(1) {
+  animation-delay: 0.4s;
+}
+
+.action-buttons button:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.action-buttons button:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+@keyframes slideUpAndFadeIn {
+  to {
+      opacity: 1; /* Fully visible */
+      transform: translateY(0); /* Move to final position */
+  }
+}
+
+.action-buttons button:hover {
+    background-color: #313131;
+    color: white; /* Change text color to white for better contrast on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-links, .auth-cart {
+        flex-direction: column;
+    }
+
+    .nav-links li, .auth-cart li {
+        margin: 5px 0;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    .action-buttons button {
+        width: 80%; /* Make buttons wider on smaller screens */
+    }
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default and set up the fade-in animation */
+.mySlides {
+  display: flex; /* Use flexbox to position images side by side */
+  justify-content: center; /* Center the images horizontally */
+  gap: 20px; /* Add a gap between images */
+}
+
+/* Style for each slide's images */
+.mySlides a img {
+  border-radius: 15px; /* Round the corners of the images */
+  width: calc(50% - 10px); /* Adjust width to account for the gap */
+  height: auto; /* Keep the aspect ratio */
+  max-height: 250px; /* Set a max height for larger screens */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for some depth */
+}
+
+/* Rest of the styles remain the same */
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .mySlides a img {
+      width: calc(100% - 10px); /* Full width for smaller screens */
+      max-height: 150px; /* Adjust height on smaller screens */
+      margin: 10px 0; /* Add some margin on the top and bottom */
+  }
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #ffffff;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.slideshow-container img {
+    width: 100%; /* Adjusts the image width to fit the container */
+    height: 250px; /* Fixed height */
+    object-fit: cover; /* Ensures the aspect ratio is maintained without distorting the image */
+}
+/* Drop-down menu styles */
+.nav-links li.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* Footer styles */
+footer {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #d2d2d2;
+}
+
+@media (max-width: 768px) {
+  .nav-links, .auth-cart {
+      flex-direction: column;
+  }
+
+  .nav-links li, .auth-cart li {
+      margin: 5px 0;
+  }
+}
+#cart {
+  background-color: #fff;
+  margin: 20px;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center; /* Center align text */
+}
+
+#cart h1 {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.cart-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+  gap: 20px;
+  justify-items: center; /* Center align items horizontally */
+}
+
+.cart-item {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.cart-item img {
+  width: 100%; /* Ensure images fill their containers */
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.item-details h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.cart-total {
+  margin-top: 30px;
+}
+
+.cart-total h2 {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cart-total button {
+  background-color: #007aff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none; /* Ensure button style doesn't get overridden */
+}
+
+.cart-total button:hover {
+  background-color: #005ecb;
+}
+
+/*form styles*/
+
+.form-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"],
+.form-container input[type="email"],
+.form-container input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.form-container input[type="submit"] {
+  background-color: #007aff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-container input[type="submit"]:hover {
+  background-color: #005ecb;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus,
+.form-container input[type="email"]:focus {
+  border-color: #007aff;
+  outline: none;
+}
+
+.form-container input[type="submit"]:focus {
+  outline: none;
+}
+
+.form-container p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.form-container p a {
+  color: #007aff;
+  text-decoration: none;
+}
+
+.form-container p a:hover {
+  text-decoration: underline;
+}

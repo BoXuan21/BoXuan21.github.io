@@ -1,0 +1,95 @@
+.action-buttons {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    align-items: center; /* Align buttons vertically */
+    flex-wrap: wrap; /* Allows buttons to wrap in smaller screens */
+    gap: 20px; /* Adds space between buttons */
+    padding: 20px;
+}
+
+.action-buttons button {
+  background-color: rgb(255, 255, 255);
+  color: #313131;
+  border: 2px solid #313131;
+  padding: 20px 40px;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0; /* Start invisible */
+  transform: translateY(50px); /* Start below their final position */
+  animation: slideUpAndFadeIn 0.5s ease-out forwards; /* Animation */
+  animation-delay: 0.2s; /* Starts the animation a bit later */
+}
+
+/* Animation for each button with a slight delay */
+.action-buttons button:nth-child(1) {
+  animation-delay: 0.4s;
+}
+
+.action-buttons button:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.action-buttons button:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+@keyframes slideUpAndFadeIn {
+  to {
+      opacity: 1; /* Fully visible */
+      transform: translateY(0); /* Move to final position */
+  }
+}
+
+.action-buttons button:hover {
+    background-color: #313131;
+    color: white; /* Change text color to white for better contrast on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-links, .auth-cart {
+        flex-direction: column;
+    }
+
+    .nav-links li, .auth-cart li {
+        margin: 5px 0;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    .action-buttons button {
+        width: 80%; /* Make buttons wider on smaller screens */
+    }
+}
+
+* {box-sizing:border-box}
+
+.submitButton {
+  background-color: green;
+  color: white;
+  border-style: none;
+  font-size: large;
+  padding: 12px 30px;
+  border-radius: 5%;
+}
+.submitButton:hover {
+  background-color: rgb(12, 107, 32);
+}
+
+a:link { 
+  text-decoration: none; 
+} 
+a:visited { 
+  text-decoration: none; 
+} 
+a:hover { 
+  text-decoration: none; 
+} 
+a:active { 
+  text-decoration: none; 
+}
